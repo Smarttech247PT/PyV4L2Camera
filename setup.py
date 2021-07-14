@@ -16,12 +16,12 @@ except ValueError:
 ext = '.pyx' if USE_CYTHON else '.c'
 extensions = [
     Extension(
-        'PyV4L2Camera/camera',
+        'PyV4L2Camera.camera',
         ['PyV4L2Camera/camera' + ext],
         libraries=['v4l2', ]
     ),
     Extension(
-        'PyV4L2Camera/controls',
+        'PyV4L2Camera.controls',
         ['PyV4L2Camera/controls' + ext],
         libraries=['v4l2', ]
     )
